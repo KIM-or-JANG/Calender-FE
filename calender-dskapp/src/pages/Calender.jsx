@@ -23,7 +23,7 @@ export default Calendar;
 const CalenderWrapper = styled.div`
 width : 100%;
 hight : 90%;
-margin-left : 150px;
+margin-left : 120px;
 margin-right : 20px;
 margin-top : 20px;
 margin-bottom : 50px;
