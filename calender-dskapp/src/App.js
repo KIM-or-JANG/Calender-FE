@@ -1,7 +1,8 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import './App.css';
-import MyCalender from './pages/MyCalender';
 import Sidebar from './components/Sidebar';
+import Login from './pages/Login';
+import Calender from './pages/Calender';
 
 
 
@@ -9,10 +10,13 @@ function App() {
   return (
     <>
     <BrowserRouter>
+    <div style={{ display: 'flex' }}>
     <Sidebar />
       <Routes>
-        <Route path="/" element={<MyCalender />}></Route>
+        <Route path="/" element={<Calender />}></Route>
+        <Route path="/login" element={<Login />}></Route>
       </Routes>
+    </div>
     </BrowserRouter>
     </>
   );
