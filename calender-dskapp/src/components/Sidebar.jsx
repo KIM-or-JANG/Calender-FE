@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
-import Modal from './Modal';
+import AddRoomModal from './AddRoomModal';
 
 const Sidebar = () => {
 
@@ -12,12 +12,10 @@ const Sidebar = () => {
 
   return (
     <SidebarWrapper>
-
       <RoomChannel>
         {room}
       </RoomChannel>
-      <Modal/>
-
+      <AddRoomModal />
     </SidebarWrapper>
   );
 }

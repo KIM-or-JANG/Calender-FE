@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
 
-const Modal = () => {
+const AddRoomModal = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const openModal = () => {
@@ -18,7 +18,7 @@ const Modal = () => {
       {isOpen && (
         <ModalWrapper>
           <ModalContent>
-            <CloseButton onClick={closeModal}>닫기</CloseButton>
+            <CloseButton onClick={closeModal}>x</CloseButton>
             <p>방 생성 모달</p>
           </ModalContent>
         </ModalWrapper>
@@ -27,7 +27,7 @@ const Modal = () => {
   );
 };
 
-export default Modal;
+export default AddRoomModal;
 
 const ModalWrapper = styled.div`
   display: flex;
@@ -39,7 +39,7 @@ const ModalWrapper = styled.div`
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  z-index: 999;
+  z-index: -999;
 `;
 
 

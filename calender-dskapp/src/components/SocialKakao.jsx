@@ -11,7 +11,7 @@ const SocialKakao = ()=>
     }
     return(
     <>
-    <button onClick={handleLogin}>카카오 로그인</button>
+        <img src='../assets/socailLogin/kakao_login_medium_narrow.png' alt='카카오 로그인' onClick={handleLogin} />
     </>
     )
 }
